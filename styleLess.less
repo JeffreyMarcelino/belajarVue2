@@ -1,0 +1,39 @@
+@colors1: #7868e6;
+@colors2: #ffffff;
+@fonts1: RocknRoll One;
+
+@import url('https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    background: skyblue;
+}
+
+.text-center {
+    text-align: center;
+    font-size: 30px;
+    color: @colors1;
+    font-family: @fonts1;
+}
+
+.border-radius {
+    color: @colors2;
+    border-radius: 5px;
+    box-shadow: 2px 5px #888888;
+    border: 1px solid;
+    padding: 10px;
+    text-align: center;
+    width: 25%;
+    display: block;
+    margin: auto
+}
+
+
+.test h1 {
+    .text-center;
+}
+
+.test input {
+    .border-radius
+}

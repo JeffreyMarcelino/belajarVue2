@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn Vue</title>
+
+    <link rel="stylesheet/less" type="text/css" href="styleLess.less" />
+    <script src="//cdn.jsdelivr.net/npm/less@3.13"></script>
+</head>
+
+<body>
+
+    <div class="test">
+        <h1 aria-placeholder="Input your name">{{name}}</h1>
+        <br>
+        <input v-model='name'>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+
+    <script>
+        const item = {
+            name: 'Jeffrey Marcelino'
+        }
+
+        const vueTest = new Vue({
+            el: '.test',
+            data: item
+        })
+    </script>
+</body>
+
+</html>
